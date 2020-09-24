@@ -5,12 +5,12 @@ const products = [
   { name: "Захват", price: 1200, quantity: 2 },
 ];
 
-const getAllPropValues = function (arr, prop) {
+const getAllPropValues = function (array, prop) {
   const findValue = [];
 
-  for (let i = 0; i < arr.length; i += 1) {
-    if (arr[i][prop] === undefined) return findValue;
-    findValue.push(arr[i][prop]);
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i][prop] === undefined) return findValue;
+    findValue.push(array[i][prop]);
   }
 
   return findValue;

@@ -1,7 +1,10 @@
 const countTotalSalary = function (employees) {
   let sumSalary = 0;
-  for (const key in employees) {
-    sumSalary += employees[key];
+  // for (const key in employees) {
+  //   sumSalary += employees[key];
+  // } ||
+  for (const iterator of Object.values(employees)) {
+    sumSalary += iterator;
   }
   return sumSalary;
 };

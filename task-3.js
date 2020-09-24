@@ -8,6 +8,7 @@ const findBestEmployee = function (employees) {
   for (const key in employees) {
     if (employees[key] === bestResult) return key;
   }
+  return "";
 };
 
 /*
@@ -38,3 +39,4 @@ console.log(
     chelsy: 38,
   })
 ); // lux
+console.log(findBestEmployee({}));

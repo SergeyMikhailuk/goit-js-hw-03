@@ -1,15 +1,19 @@
+let message = "";
 const user = {
-  name: "Mango",
   age: 20,
   hobby: "html",
+  name: "Mango",
   premium: true,
 };
+
 user.mood = "happy";
+user["full time"] = true;
 user.hobby = "skydiving";
 user.premium = false;
-const userKeys = Object.keys(user);
-console.log(userKeys);
 
-for (const key of userKeys) {
-  console.log(`${key}:${user[key]}`);
+const keys = Object.keys(user);
+for (const key of keys) {
+  message += `${key}:${user[key]} '\n'`;
 }
+
+console.log(message);
